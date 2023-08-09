@@ -6,8 +6,8 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const Stats = () => {
   return (
     <>
-    <Parallax pages={4}>
-      <ParallaxLayer offset={0} sticky={{start: 0, end: 3 }}>
+    <Parallax pages={2}>
+      <ParallaxLayer offset={0} sticky={{start: 0, end: 0 }}>
         <Image
           src={gifImage}
           alt="gif-image"
@@ -32,7 +32,7 @@ const Stats = () => {
             <span className="text-[100px] font-light flex-end">65+</span>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={1.75}>
+          <ParallaxLayer offset={1} speed={1.75}>
             <span className="text-[30px] font-extralight">
               {" "}
               Completed Projects
@@ -41,7 +41,7 @@ const Stats = () => {
             <span className="text-[100px] font-light">235+</span>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3} speed={2.5}>
+          <ParallaxLayer offset={1} speed={2.5}>
             <span className="text-[30px] font-extralight"> Happy Customer</span>
             <br />
             <span className="text-[100px] font-light">90%</span>
