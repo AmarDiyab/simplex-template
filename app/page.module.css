@@ -7,7 +7,7 @@
 }
 
 .gif {
-    @apply h-[800px] overflow-hidden rounded-[20px] relative bg-scroll
+    @apply h-[800px] overflow-visible rounded-[20px] relative
 }
 
 .project1:hover {
@@ -22,6 +22,7 @@
 .firstline {
     @apply w-[60%] h-[1px] bg-black mx-3 mb-[5px]
 }
+
 
 .secondline {
     @apply w-[40%] h-[1px] bg-black ml-3 mb-[5px]
