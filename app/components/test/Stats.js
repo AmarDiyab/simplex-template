@@ -14,7 +14,7 @@ const Stats = () => {
           className="rounded-[20px] mt-10 m-10"
         />
 
-          <ParallaxLayer offset={0} speed={1.25}>
+          <ParallaxLayer offset={0} speed={2.5}>
             <span className="text-[30px] font-extralight inset-0">
               {" "}
               Completed Projects
@@ -23,7 +23,7 @@ const Stats = () => {
             <span className="text-[100px] font-light">5K</span>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={5} >
+          <ParallaxLayer offset={0} speed={2.5} >
             <span className="text-[30px] font-extralight float">
               {" "}
               Clients Overall
@@ -32,7 +32,7 @@ const Stats = () => {
             <span className="text-[100px] font-light flex-end">65+</span>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={1.75}>
+          <ParallaxLayer offset={0} speed={2.5}>
             <span className="text-[30px] font-extralight">
               {" "}
               Completed Projects
@@ -41,7 +41,7 @@ const Stats = () => {
             <span className="text-[100px] font-light">235+</span>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={2.5}>
+          <ParallaxLayer offset={0} speed={2.5}>
             <span className="text-[30px] font-extralight"> Happy Customer</span>
             <br />
             <span className="text-[100px] font-light">90%</span>

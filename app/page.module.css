@@ -1,0 +1,103 @@
+.giftext {
+    @apply relative block text-[100px] font-light my-0 leading-[1.3em] tracking-[-6px]
+}
+
+.giftextSub {
+    @apply text-[30px] font-[200] leading-[1.4] mb-[12px]
+}
+
+.gif {
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    @apply h-[800px] overflow-hidden rounded-[20px]
+}
+
+.project1:hover {
+    background-image: url(/app/assets/view-icon.svg);
+    @apply h-auto inline-block align-middle max-w-full hover:cursor-pointer transition ease-in-out hover:-translate-y-1 hover:scale-125
+}
+
+.navdrawer {
+    @apply w-[60px] h-[60px] bg-[#fff] rounded-[100px] relative flex flex-col items-start justify-center shadow-[0_0_20px_rgba(0,0,0,0.1)] mr-5
+}
+
+.firstline {
+    @apply w-[60%] h-[1px] bg-black mx-3 mb-[5px]
+}
+
+.secondline {
+    @apply w-[40%] h-[1px] bg-black ml-3 mb-[5px]
+}
+
+.thirdline {
+    @apply w-[60%] h-[1px] bg-black ml-3
+}
+
+.heading {
+    @apply block relative text-[100px] text-center font-[300] tracking-[-6px] leading-[1.3em] mb-[16px]
+}
+
+.subheading {
+    @apply block text-[24px] font-[200] leading-[1.43em] mr-[10px] mb-[19px]
+}
+
+.horizontalText {
+    @apply text-[70px] font-extralight ml-[10px] mr-[10px]
+}
+
+.horizontalImage {
+    @apply h-[70px] mt-5
+}
+
+.projectWrapper2 {
+    @apply flex gap-[20px] mt-[20px] overflow-hidden
+}
+
+@media screen and (max-width: 640px) {
+    
+    .navdrawer {
+        @apply w-[50px] h-[50px] 
+    }
+
+    .firstline {
+        @apply w-[50%]
+    }
+
+    .secondline {
+        @apply w-[30%]
+    }
+
+    .thirdline {
+        @apply w-[50%]
+    }
+
+    .heading {
+        @apply text-[51px] leading-[1] tracking-[-3px]
+    }
+
+    .subheading {
+        @apply text-[18px] 
+    }
+
+    .horizontalText {
+        @apply text-[40px]
+    }
+
+    .horizontalImage {
+        @apply h-[70px] mt-[0]
+    }
+
+    .projectWrapper2 {
+        @apply flex flex-col
+    }
+
+    .line1 {
+        @apply text-[70px]
+    }
+    
+    .line1sub {
+        @apply text-[26px]
+    }
+
+
+}

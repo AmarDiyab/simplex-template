@@ -4,9 +4,10 @@ import Main from "./components/Main";
 import Stats from "./components/Stat";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
-import Articles from "./components/Articles";
+
 
 export default function Home() {
+
   return (
     <div className="overflow-x-hidden">
       <header className="header">
@@ -14,13 +15,12 @@ export default function Home() {
       </header>
       <main className="main">
         <Main />
-         
-        <Stats />
-       
+        <Stats />     
         <Services />
         <Projects />
-        <Articles />
       </main>
+      
+      
     </div>
   )
 }
