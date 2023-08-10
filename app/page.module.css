@@ -1,5 +1,5 @@
 .giftext {
-    @apply relative block text-[100px] font-light my-0 leading-[1.3em] tracking-[-6px]
+    @apply block relative text-[100px] my-0 font-light my-0 leading-[1.3em] tracking-[-6px]
 }
 
 .giftextSub {
@@ -7,9 +7,7 @@
 }
 
 .gif {
-    transform-style: preserve-3d;
-    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    @apply h-[800px] overflow-hidden rounded-[20px]
+    @apply h-[800px] overflow-hidden rounded-[20px] relative bg-scroll
 }
 
 .project1:hover {
@@ -91,12 +89,12 @@
         @apply flex flex-col
     }
 
-    .line1 {
-        @apply text-[70px]
+    .giftext {
+        @apply invisible
     }
     
-    .line1sub {
-        @apply text-[26px]
+    .giftextSub {
+        @apply invisible
     }
 
 
