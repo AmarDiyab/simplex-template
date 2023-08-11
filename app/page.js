@@ -1,7 +1,7 @@
 "use client"
 import Header from "./components/Header";
 import Main from "./components/Main";
-import Stats from "./components/Stat";
+import Stats from "./components/Stats";
 import Services from "./components/Services";
 import Projects from "./components/Projects";
 
@@ -15,7 +15,9 @@ export default function Home() {
       </header>
       <main className="main">
         <Main />
-        <Stats />     
+        <div className="mt-200px">
+        <Stats />
+        </div>
         <Services />
         <Projects />
       </main>

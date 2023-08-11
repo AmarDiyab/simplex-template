@@ -1,14 +1,39 @@
 .giftext {
-    @apply block relative text-[100px] my-0 font-light my-0 leading-[1.3em] tracking-[-6px]
+    @apply block relative text-[100px] my-0 font-light my-0 leading-[1.3em] tracking-[-6px] 
+}
+
+.projectHeading {
+    @apply text-[100px] font-light block relative leading-[1.3m] tracking-[-6px] mb-[20px] z-50
+}
+
+.projectSubheading {
+    @apply text-[30px] font-extralight leading-[1.4] overflow-hidden z-50
+}
+
+.projectWidth {
+    @apply w-[800px]
 }
 
 .giftextSub {
-    @apply text-[30px] font-[200] leading-[1.4] mb-[12px]
+    @apply text-[30px] font-[200] leading-[1.4] mb-[12px] z-50
 }
 
 .gif {
+    background-image: url("./assets/gif-poster.jpeg");
+    background-size: cover;
+    background-position: top;
+    width: 2000px;
+    z-index: 10;
     @apply h-[800px] overflow-visible rounded-[20px] relative
 }
+
+/* .sticky {
+    position:  -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-radius: 20px;
+    height: 800px;
+} */
 
 .project1:hover {
     background-image: url(/app/assets/view-icon.svg);
@@ -22,7 +47,6 @@
 .firstline {
     @apply w-[60%] h-[1px] bg-black mx-3 mb-[5px]
 }
-
 
 .secondline {
     @apply w-[40%] h-[1px] bg-black ml-3 mb-[5px]
@@ -50,6 +74,31 @@
 
 .projectWrapper2 {
     @apply flex gap-[20px] mt-[20px] overflow-hidden
+}
+
+.gifWrapper {
+    background-image: url('./assets/gif-poster.jpeg');
+    @apply sticky h-[100%] overflow-hidden bg-scroll
+}
+
+.gifContainer {
+        background-image: url(./assets/gif-image.png); 
+        background-position: center;
+        /* 
+          the three following items below do the following: 
+            a) fix the width and height of the containing div
+               to be smaller than the width and height of the content.
+            b) we set the overflow style so that when the content is
+               bigger than the containing element scroll bars appear
+               to allow users to scroll the element contents. 
+        */
+        height: 800px; 
+        width: 100%; 
+        overflow:scroll;
+}
+
+.gifImage {
+    z-index: 1;
 }
 
 @media screen and (max-width: 640px) {
@@ -98,5 +147,16 @@
         @apply invisible
     }
 
+    .projectHeading {
+        @apply text-[45px] leading-[1] tracking-[-3px]
+    }
+
+    .projectSubheading {
+        @apply text-[21px] 
+    }
+
+    .projectWidth {
+        @apply w-[auto]
+    }
 
 }
